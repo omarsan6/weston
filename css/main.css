@@ -1,0 +1,146 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 20px;
+}
+
+.header{
+    background-image: url(../img/bg-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-logo{
+    width: 40px;
+}
+
+a{
+    color: white;
+    transition-duration: 0.3s;
+    
+}
+
+a:hover{
+    color: #Ffeb3b;
+    text-decoration: none;
+}
+
+.anclas{
+    font-size: 20px;
+}
+
+.vh-50{
+    height: 50vmin;
+}
+
+.header__title{
+    font-size: 60px;
+    color:#Ffeb3b;
+    font-weight: 700;
+}
+
+
+
+.color-primary{
+    color:#Ffeb3b;
+}
+
+/* EXPERIENCE */
+.card-img-filter{
+    filter: brightness(0.5);
+}
+
+.card {
+    transition-duration: .6s;
+    clip-path: polygon(
+        50% 0,
+        100% 0,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0 100%,
+        0 50%,
+        0 0
+    );
+}
+
+.card-effect:hover .card {
+    clip-path: polygon(
+        50% 0,
+        50% 0,
+        100% 50%,
+        100% 50%,
+        50% 100%,
+        50% 100%,
+        0 50%,
+        0 50%
+    );
+}
+
+.card-img-overlay{
+    transition-duration: 0.1s;
+}
+
+.card-effect:hover .card-img-overlay{
+    transform: scale(0.9);
+}
+
+/* coments */
+
+.comments{
+    background-image: url(../img/bg-clients.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.comments__img{
+    --tamano:80px;
+    width: var(--tamano);
+    height: var(--tamano);
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 7px 7px 7px rgba(0 0 0 / 0.5);
+    border: 3px ridge #fff;
+}
+
+.transform-turn{
+    transform: rotate(0.5turn);
+}
+
+.comments__name{
+    color: #fff;
+    background: #00000094;
+}
+
+/* inspiration */
+
+.media-object-img{
+    --tamano: 65px;
+    width: var(--tamano);
+    height: var(--tamano);
+    margin-right: 15px;
+}
+
+/* carousel */
+
+.carousel-weston-middle{
+    top: 35%;
+}
+
+
+/* footer */
+
+.icon-r{
+    width: 40px;
+    height: 40px;
+}
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width:375px) {
+    .vh-50{
+        height: 50vmax;
+    }
+}
